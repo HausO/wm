@@ -1,0 +1,20 @@
+parameters:
+
+database:
+    dsn: 'mysql:host=YOUR_DB_SERVER;dbname=YOUR_DB_NAME'
+    user: 'YOUR_DB_USER'
+    password: 'YOUR_DB_PASSWORD'
+    options:
+        lazy: yes
+
+nette:
+    mailer:
+        smtp: true;
+        host: YOUR_MAIL_SERVER
+        username: YOUR_MAIL_USER
+        password: YOUR_MAIL_PASSWORD
+
+services:
+    - App\Forms\RegistrationFormFactory
+    - App\Model\RegistrationManager
+    - App\Components\RegistrationMailer(recipient_email: 'YOUR_RECIPIENT_BOX', recipient_name: 'YOUR_RECIPIENT_NAME')
