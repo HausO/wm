@@ -15,4 +15,4 @@ v prohlizeci prejdite na adresu ~/nette-wm/www/
 
 
 demo :
-http://ivp.domanik.sk/wunderman/www/
+http://ivp.domanik.sk/wm/www/
